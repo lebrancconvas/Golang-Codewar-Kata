@@ -1,14 +1,15 @@
 package dna_to_rna
 
 func DNAtoRNA(dna string) string {
-	if dna == "ACGT" {
-		return "ACGU"
+	var rna string = ""
+
+	for _, char := range dna {
+		if char == 'T' {
+			rna += "U"
+		} else {
+			rna += string(char)
+		}
 	}
 
-	if dna == "CGTA" {
-		return "CGUA"
-	}
-
-	return "GCAU"
-
+	return rna
 }
