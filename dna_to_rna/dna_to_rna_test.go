@@ -12,6 +12,7 @@ func TestDNAtoRNA(t *testing.T) {
 	testCases := []TestCase{
 		{Name: "GCAT should return GCAU", Input: "GCAT", Want: "GCAU"},
 		{Name: "ACGT should return ACGU", Input: "ACGT", Want: "ACGU"},
+		{Name: "CGTA should return CGUA", Input: "CGTA", Want: "CGUA"},
 	}
 
 	for _, tt := range testCases {

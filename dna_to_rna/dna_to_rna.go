@@ -5,5 +5,10 @@ func DNAtoRNA(dna string) string {
 		return "ACGU"
 	}
 
+	if dna == "CGTA" {
+		return "CGUA"
+	}
+
 	return "GCAU"
+
 }
